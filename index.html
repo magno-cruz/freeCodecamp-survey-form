@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
     <title>Satisfaction Survey</title>
 </head>
 <body>
-    <h1 id='title'>Satisfaction Survey</h1>
-<p id='description'>We would like to know more about your .</p>
+    <h1 id='title'>Stack Survey</h1>
+<p id='description'>We would appreciate if you could answer a few questions.</p>
 <form id='survey-form'>
-  <label id='name-label'>
-    <input id='name' type='text' placeholder='Nome Completo' required />
-  </label><br>
-  <label id='email-label'>
-    <input id='email' type='email' placeholder='Email' required />
-  </label><br><br>
+  <div class="contact">
+    <label id='name-label'>Full name
+      <input id='name' type='text' placeholder='Name' required />
+    </label><br>
+    <label id='email-label'>Email address</address>
+      <input id='email' type='email' placeholder='Email' required />
+    </label><br>
+    <label id='number-label'>Age (optional)
+      <input id='number' type='number' placeholder='Nota' min='1' max='10'/>
+    </label><br>
+  </div>
 
-
-  <label id='number-label'>On a scale from 1 to 10, how much did of the lessions where you able to understand?"<br>
-    <input id='number' type='number' placeholder='Nota' min='1' max='10'/>
-  </label><br><br>
 
 
   <label>Which area are you more interested in?</label><br>
@@ -47,7 +49,7 @@
         <input type='checkbox' id='react-native'value='React-Native' name='stack' />
     <label for='react-native'>React Native</label><br>
 
-  <p>Would you like to add any comment?
+  <p>Would you like to add any comment?<br>
   <textarea id='comment' rows="4" cols="50"></textarea>
 
   <br><br><input type="submit" id="submit">
