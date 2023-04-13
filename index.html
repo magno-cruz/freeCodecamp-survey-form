@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Satisfaction Survey</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" />
+	<title>Satisfaction Survey</title>
 </head>
 <body>
-    <h1 id='title'>Stack Survey</h1>
-<p id='description'>We would appreciate if you could answer a few questions.</p>
-<form id='survey-form'>
-  <div class="contact">
-    <label id='name-label'>Full name
-      <input id='name' type='text' placeholder='Name' required />
-    </label><br>
-    <label id='email-label'>Email address</address>
-      <input id='email' type='email' placeholder='Email' required />
-    </label><br>
-    <label id='number-label'>Age (optional)
-      <input id='number' type='number' placeholder='Nota' min='1' max='10'/>
-    </label><br>
-  </div>
+	<h1 id='title'>Stack Survey</h1>
+	<p id='description'>We would appreciate if you could answer a few questions.</p>
+	<form id='survey-form'>
+		<div class="contact">
+			<label id='name-label'>Full name
+				<input id='name' type='text' placeholder='Name' required />
+			</label><br>
+			<label id='email-label'>Email address</address>
+				<input id='email' type='email' placeholder='Email' required />
+			</label><br>
+			<label id='number-label'>Age (optional)
+				<input id='number' type='number' placeholder='Nota' min='1' max='10'/>
+			</label><br>
+			<label>Which area are you more interested in?</label><br>
+			<select id='dropdown'>
+				<option>Front-end</option>
+				<option>Back-end</option>
+				<option>Full-stack</option>
+			</select>
+			<br>
+		</div>
+		
 
+		<br><br>
+		<div class="platform">
+			<p>Which platform do you prefer:<p>
+			<input type='radio' id='web'value='Web' name='platform' />
+			<label for='web'>Web</label><br>
+			<input type='radio' id='mobile'value='Mobile' name='platform' />
+			<label for='mobile'>Mobile</label><br>
+			<input type='radio' id='desktop'value='Desktop' name='platform' />
+			<label for='desktop'>Desktop</label>
+		</div>
 
-
-  <label>Which area are you more interested in?</label><br>
-  <select id='dropdown'>
-    <option>Front-end</option>
-    <option>Back-end</option>
-    <option>Full-stack</option>
-  </select>
-
-  <br><br>
-  <p>Which platform do you prefer:<p>
-    <input type='radio' id='web'value='Web' name='platform' />
-    <label for='web'>Web</label><br>
-    <input type='radio' id='mobile'value='Mobile' name='platform' />
-    <label for='mobile'>Mobile</label><br>
-    <input type='radio' id='desktop'value='Desktop' name='platform' />
-    <label for='desktop'>Desktop</label><br>
-
-  <p>Which technologies do you want to learn?</p>
-    <input type='checkbox' id='react'value='React' name='stack' />
-    <label for='react'>React</label><br>
-    <input type='checkbox' id='node'value='Node' name='stack' />
-    <label for='node'>Node.js</label><br>
-        <input type='checkbox' id='react-native'value='React-Native' name='stack' />
-    <label for='react-native'>React Native</label><br>
-
-  <p>Would you like to add any comment?<br>
-  <textarea id='comment' rows="4" cols="50"></textarea>
-
-  <br><br><input type="submit" id="submit">
-</form>
+		<div class="tech">
+			<p>Which technologies do you want to learn?</p>
+			<input type='checkbox' id='react'value='React' name='stack' />
+			<label for='react'>React</label><br>
+			<input type='checkbox' id='node'value='Node' name='stack' />
+			<label for='node'>Node.js</label><br>
+			<input type='checkbox' id='react-native'value='React-Native' name='stack' />
+			<label for='react-native'>React Native</label><br>
+		</div>
+		<div class="comment">
+			<p>Would you like to add any comment?<br>
+			<textarea id='comment' rows="4" cols="50"></textarea>
+			<br><br><input type="submit" id="submit">
+		</div>
+	</form>
 </body>
 </html>
