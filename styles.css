@@ -1,28 +1,101 @@
 body {
-	font-family: 'Courier New', Courier, monospace;
-	font-size: larger;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: larger;
+
 }
 
 h1 {
-	color: red;
+	font-weight: bolder;
+	font-size: 58px;
 }
 
 .contact, .platform, .tech, .comment {
-	display: flex;
-	flex-direction: column;
 	background-color: rgb(200, 200, 200);
-	padding: 20px 40px;
-	margin: auto;
-	width: 50%;
-	border-radius: 1.5rem;
+	padding: 10px 20px;
+	margin: 30px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	width: auto;
+	flex-direction: column;
 
+}
+
+input {
+	margin: 3px;
+	width: auto;
 }
 
 #dropdown {
+	margin: 5px;
 	padding: 5px;
 	width: fit-content;
 }
+/*
 
+
+
+	
+	
+	
+	
+	
+
+}
+
+
+
+.tech {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.checkmark {
+	height: 25px;
+	margin-right: 200px;
+	padding: 0;
+	border: 0;
+	background-color: rgba(255, 255, 255, 1);
+  }
+
+textarea {
+	margin-top: 10px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+/*
+  .css-checkbox { position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}#inputPreview { display: flex;
+		gap: 20px;
+		justify-content: center;	}.css-checkbox + label { position: relative;
+		font-size: 14px;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		height: 27px;
+		color: rgb(0, 0, 0);
+	}.css-checkbox + label::before { content: " ";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 3px;
+		width: 25px;
+		height: 25px;
+		background-color: rgb(237, 231, 216);
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(222, 209, 178);
+		border-radius: 2px;
+		box-shadow: none;
+	}	}
+*/

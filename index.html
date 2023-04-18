@@ -12,6 +12,7 @@
 	<p id='description'>We would appreciate if you could answer a few questions.</p>
 	<form id='survey-form'>
 		<div class="contact">
+			<p>
 			<label id='name-label'>Full name
 				<input id='name' type='text' placeholder='Name' required />
 			</label><br>
@@ -19,19 +20,16 @@
 				<input id='email' type='email' placeholder='Email' required />
 			</label><br>
 			<label id='number-label'>Age (optional)
-				<input id='number' type='number' placeholder='Nota' min='1' max='10'/>
-			</label><br>
+				<input id='number' type='number' placeholder='Age' min='1' max='10'/>
+			</label><br><p>
 			<label>Which area are you more interested in?</label><br>
 			<select id='dropdown'>
 				<option>Front-end</option>
 				<option>Back-end</option>
 				<option>Full-stack</option>
 			</select>
-			<br>
 		</div>
-		
 
-		<br><br>
 		<div class="platform">
 			<p>Which platform do you prefer:<p>
 			<input type='radio' id='web'value='Web' name='platform' />
@@ -43,18 +41,21 @@
 		</div>
 
 		<div class="tech">
-			<p>Which technologies do you want to learn?</p>
-			<input type='checkbox' id='react'value='React' name='stack' />
+			<p>Which technologies do you want to learn?<p>
+			<input type='checkbox' id='react'value='React' name='stack' class="checkmark"/>
 			<label for='react'>React</label><br>
-			<input type='checkbox' id='node'value='Node' name='stack' />
+			<input type='checkbox' id='node'value='Node' name='stack' class="checkmark"/>
 			<label for='node'>Node.js</label><br>
-			<input type='checkbox' id='react-native'value='React-Native' name='stack' />
+			<input type='checkbox' id='react-native'value='React-Native' name='stack' class="checkmark"/>
 			<label for='react-native'>React Native</label><br>
 		</div>
+
 		<div class="comment">
-			<p>Would you like to add any comment?<br>
-			<textarea id='comment' rows="4" cols="50"></textarea>
-			<br><br><input type="submit" id="submit">
+			<div style="display: flex; justify-content: center;">
+				<p>Would you like to add any comment?<br>
+				<textarea id='comment' rows="4" cols="50"></textarea>
+				<br><br><input type="submit" id="submit" value="Send">
+			</div>
 		</div>
 	</form>
 </body>
